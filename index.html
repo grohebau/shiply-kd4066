@@ -144,7 +144,7 @@ async function showRoute(order) {
       lineOptions: { styles: [{ color: "red", weight: 5 }] },
       
 createMarker: function (i, waypoint) {
-  const label = i === 0 ? "🚚" : "🎯";
+  const label = i === 0 ? "🚚" : "🏠";
   return L.marker(waypoint.latLng)
            .bindTooltip(label, { permanent: true, direction: 'top' })
            .openTooltip();
